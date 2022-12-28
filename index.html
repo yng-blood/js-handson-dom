@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>dom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .boxchange {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 25px;
+        }
+        
+        #newboxchange {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    <h1> <span>Q1</span>Write the code to access element which is having id as "text"</h1>
+    <div id="text">Hello World!</div>
+
+    <script>
+        var hellowtext = document.getElementById("text");
+        console.log(hellowtext.innerText);
+    </script>
+</pre>
+    <br>
+    <h1 id="text1"> <span>Q2</span> Write the code to access element which is having tag as "h1"</h1>
+    <h1 id="text2">prepbytes</h1>
+    <h1 id="text3">Hello World!</h1>
+
+    <script>
+        let tagname = document.getElementsByTagName('h1');
+        console.log(tagname[1].innerText);
+    </script>
+    </pre>
+    <br>
+    <pre>
+    <h1> <span>Q3</span> Write the code to access element which is having class as "box"</h1>
+    <div class="box">prepbytes</div>
+    
+    
+    <script>
+        let classtag = document.getElementsByClassName('box');
+        console.log(tagname[0].innerText);
+        </script>
+</pre>
+    <pre>
+  Q4 <h1 >Hello </h1> Change the heading from ""Hello"" to ""Hello World"" using DOM functions
+   
+ <div id ="change" > Hello</div>
+    <script>
+    let newtext= document.getElementById("change");
+    newtext.innerText="Hello World";
+    </script>
+    </pre>
+
+    <h1> <span>Q5</span> <pre>
+        Create three cards on HTML page and arrange them 
+        using flex property in row or horizontal direction and also create
+         button at the bottom named "Change Flex direction". When user 
+         clicks on this button,the cards arrangement should be
+        changed to vertical direction.
+    </pre></h1>
+    <!-- <div id="newboxchange">
+        <div class="box_color" id="item1"></div>
+        <div class="box_color" id="item2"></div>
+        <div class="box_color" id="item3"></div>
+    </div>
+    <button id="changeflex"> click to change</button> -->
+    <div id="newboxchange">
+        <div class="boxchange" id="item1"></div>
+        <div class="boxchange" id="item2"></div>
+        <div class="boxchange" id="item3"></div>
+    </div>
+    <button id="allchange">Change flex direction</button>
+    <pre>
+        < script>
+let btnimp = document.getElementById("allchange");
+let flexBox = document.getElementById("newboxchange")
+btnimp.addEventListener("click", function() {
+    flexBox.style.flexDirection = "column";
+});
+</script>
+
+</pre>
+    <pre>
+    Q4 <h1 >Hello </h1>What’s the difference between window vs document?
+
+
+</pre>
+    <pre>
+    "<h1>Hello </h1>Add one style attribute and give text color as red 
+    and id attribute and give the id value as ""heading"" in the above 
+    given h1 tag using DOM functions"
+    <h1 id="heading">Hello </h1>
+    </pre>
+    <script>
+        let redfont = document.getElementById("heading").style.color = "red";
+    </script>
+    <pre>
+    <h1>
+        Create an HTML page having content as Hello world and a button named Replace 
+        Text. When user will click on  this button page content should 
+        be changed to "Welcome to Elevation academy"
+    </h1>
+</pre>
+    <p id="Hello_world">Hello world </p>
+    <button id="text_change"> this btn</button>
+    <script>
+        const eventA = document.getElementById("text_change");
+        eventA.addEventListener("click", halomoto);
+
+        function halomoto() {
+            document.getElementById("Hello_world").innerText = "Welcome to Elevation academy";
+        }
+    </script>
+    <h1>Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h1>
+
+    <a href="index2.html"> simple clock</a>
+
+
+    <pre>
+    <h1>Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</h1>
+</pre>
+    <div class="drop">
+        <select name="year" id="y20">
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+    </select>
+        <div id="area">year is here</div>
+
+    </div>
+    <script>
+        
+    </script>
+    <br><br><br><br><br>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
